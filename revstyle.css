@@ -1,0 +1,91 @@
+.parent {
+    border: solid black;
+    width: 400px;
+    height: 600px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(233, 233, 233);
+}
+.parent .fa-file-signature {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: grey;
+}
+.inps {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.inps textarea {
+    width: 82%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 5px;
+    border: solid gray 1px;
+}
+input:nth-child(1) {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    padding: 5px;
+    border-left: none;
+    height: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid gray 1px;
+}
+.buttons i {
+    font-size: 32px;
+    border: solid rgb(139, 139, 139) 1px;
+    border-radius: 100%;
+    padding: 10px;
+    align-self:flex-end;
+    color: gray;
+    transition: 0.4s;
+}
+.buttons i:hover {
+    background-color: rgb(196, 196, 196);
+    color: white;
+    transition: 0.5s;
+}
+.buttons i:active {
+    background-color: rgb(210, 210, 210);
+    color: white;
+    transition: 0.3s;
+}
+.buttons button {
+    border: none;
+    background-color: transparent;
+}
+.buttons {
+    align-self: flex-end;
+    transform: rotate(20deg);
+}
+.li {
+    list-style: none;
+    border: solid 1px gray;
+    width: 85%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 40px;
+    /* margin-left: 50px; */
+    height: 25px;
+}.reviewUl {
+    height: 65%;
+    overflow-y: scroll;
+    border: solid gray 1px;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 85%;
+    position: absolute;
+    left: 10px;
+    background-color: white;
+}

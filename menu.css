@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Micro+5&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.menudev {
+    position: fixed; 
+    height: 90vh;
+    background-color: rgba(20, 20, 20, 0.8);
+    width: 270px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    overflow: auto;
+}
+.shrift2 {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+}
+.menudev h1 {
+    padding: 15px;
+    margin-bottom: 30px;
+    color: white;
+    letter-spacing: 3px;
+}
+.menudev a:hover {
+    color: rgb(185, 185, 185);
+    transition: 0.3s;
+}
+.menudev ul {
+    list-style: none;
+}
+.menudev a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.menudev li {
+    padding: 15px;
+    font-size: 15px;
+    background-color: rgba(3, 3, 3, 0);
+    border: rgba(3, 3, 3, 0) solid 1px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding-left: 25px;
+    transition: 0.3s;
+}
+.menudev li:hover {
+    background-color: rgb(26, 25, 25, 0.8);
+    border: black solid 1px;
+    transform: translate(5px,2px);
+    transition: 0.3s;
+} 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.parent {
+    display: none;
+    border: solid rgb(109, 109, 109) 2px;
+    width: 400px;
+    height: 600px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    position:fixed;
+    background-color: rgb(233, 233, 233);
+    z-index: 1;
+    right: 120px;
+    bottom: 20px;
+    animation-name: bottomMenu;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+}
+@keyframes bottomMenu {
+    from {
+        transform: translateY(600px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.parent .fa-file-signature {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: grey;
+}
+.inps {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.inps textarea {
+    width: 82%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    border: solid gray 1px;
+}
+.back input:nth-child(1) {
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    padding: 20px;
+    font-size: 13px;
+    border-left: none;
+    height: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid gray 1px;
+}
+.buttons i {
+    font-size: 32px;
+    border: solid rgb(139, 139, 139) 1px;
+    border-radius: 100%;
+    padding: 10px;
+    align-self:flex-end;
+    color: gray;
+    transition: 0.4s;
+}
+.buttons i:hover {
+    background-color: rgb(196, 196, 196);
+    color: white;
+    transition: 0.5s;
+}
+.buttons i:active {
+    background-color: rgb(210, 210, 210);
+    color: white;
+    transition: 0.3s;
+}
+.buttons button {
+    border: none;
+    background-color: transparent;
+}
+.buttons {
+    align-self: flex-end;
+    transform: rotate(20deg);
+}
+.li {
+    list-style: none;
+    border: solid 1px gray;
+    width: 78%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.reviewUl {
+    height: 70%;
+    overflow-y: scroll;
+    border: solid gray 1px;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 86%;
+    position: absolute;
+    left: 10px;
+    background-color: white;
+}
+.close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close1:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

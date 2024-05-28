@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Micro+5&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+}
+.transparent {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    z-index: 99;
+    width: 99vw;
+    position: fixed;
+    top: -16px;
+}
+.fa-regular {
+    font-size: 20px;
+}
+.menu {
+    padding: 40px 40px;
+    color: rgba(209, 209, 209, 0.8);
+    text-align: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.menu i {
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu i:hover {
+    color: rgba(209, 209, 209, 1);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.diver {
+    height: 70px;
+    width: 99vw;
+    background-color: black;
+}
+.shrift {
+    font-family: "Anta", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    z-index: 99;
+    width: 99vw;
+    top: 0;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 0px 0 10px 0;
+    color: white;
+    position: fixed;
+}
+.paragraph {
+    padding: 50px;
+    width: 85%;
+    position: relative;
+}
+.imgdiv .p {
+    width: 65%;
+    height: 300px;
+    margin-right: 70px;
+    padding: 30px;
+    overflow: hidden;
+}
+.p p {
+    text-indent: 50px;
+    line-height: 30px;
+    color: rgb(212, 201, 201);
+    animation-name: slideUp;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes slideUp {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+.imgdiv img:nth-child(2) {
+    height: 350px;
+    width: 300px;
+    transition: 0.5s;
+    animation-name: object2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.imgdiv img:nth-child(2):hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.paragraph2 img:first-child {
+    height: 400px;
+    width: 350px;
+    transition: 0.5s;
+    animation-name: object2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+@keyframes object2 {
+    from {
+        transform: translate(0, -50px);
+    }
+    to {
+        transform: translate(0,0);
+    }
+}
+
+.paragraph2 img:first-child:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.paragraph2 {
+    margin-top: 50px;   
+}
+.paragraph2 p {
+    color: rgb(212, 201, 201);
+    margin-top: 60px;
+    width: 90%;
+    /* padding: 30px; */
+    text-indent: 50px;
+    line-height: 30px;
+    animation-name: slideDown;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes slideDown {
+    0% {
+      transform: translateY(-150%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+.p2 {
+    overflow: hidden;
+    padding: 30px;    
+}
+.main {
+    display: flex;
+    justify-content: center;
+    width: 107vw;
+}
+.background {
+    background: url(https://images.ctfassets.net/0wjmk6wgfops/nb3Q0W8VmjzthrOMiSzPt/6b8bf6ccb00141d84d32829455d073a9/Skier_resize_AdobeStock_617199939.jpeg?w=1200&h=630&f=center&fit=fill);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.background1 {
+    background: url(https://images.ctfassets.net/0wjmk6wgfops/nb3Q0W8VmjzthrOMiSzPt/6b8bf6ccb00141d84d32829455d073a9/Skier_resize_AdobeStock_617199939.jpeg?w=1200&h=630&f=center&fit=fill);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.transparent2 {
+    background-color: rgba(32, 16, 16, 0.7);
+}
+.imgg {
+    height: 120px;
+    width: 170px;
+    animation-name: object;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    left: 750px;
+    top: 350px;
+    animation-timing-function:cubic-bezier(0.175, 0.185, 0.2, -1.275);
+    animation-direction: alternate-reverse;
+    position: absolute;
+    z-index: 99;
+}
+@keyframes object {
+    from {
+       transform: translate(0,0);
+    }
+    to {
+        transform: translate(-600px,-350px);
+    }
+    
+}
+.button1 {
+    background-color: transparent;
+    height: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    align-self: center;
+    margin-top: 20px;
+
+}
+.button1 i {
+    border-left: solid white 1px;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+.navbar {
+    display: none;
+}
+.button1:hover .navbar{
+    display: block;
+}
